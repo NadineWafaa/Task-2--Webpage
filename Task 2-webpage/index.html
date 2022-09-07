@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <header id="header ">
+            <div class="flex">
+              <div class="login">Login.</div>
+            </div>
+        </header>
+        <div class="cont">
+          <p class="Title">Welcome <br> back.</p>
+          <button class="btn container"> 
+            <img src="./google-logo.jpeg" alt="google logo" class="logo">
+            <p class="signin">Sign in with Google.</p>
+          </button>
+          <div class="line-container">
+            <hr class="line1"> 
+            <div class="or">Or</div>
+            <hr class="line2"> 
+          </div>
+          
+          <form class="form">
+            <div>
+               <label for="email" class="info">Email address</label><br>
+               <input type="email" id="email" name="email"  placeholder="Enter your email"><br><br>
+            </div>
+            <div>
+                <label for="pwd" class="info">Password</label><br>
+                <input type="password" id="pwd" name="pwd" minlength="8" placeholder="Enter your passwrod" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br><br>
+                <span class="eye" onclick="myFunction()">
+                    <i class="fa fa-eye" aria-hidden="true" id="eyeOpened"></i>
+                    <i class="fa fa-eye-slash" aria-hidden="true" id="notEye"></i>
+                </span> 
+                
+            </div>
+            
+            <div class="container">
+                <input type="checkbox" id="rememberme" name="rememberme">
+                <label for="rememberme" class="rememberme "> Remember me</label><br>
+                <div class=" question">Forgot Password?</div>
+            </div>
+          </form>
+          <button class="btn2">Sign in</button>
+          <div class="container">
+                <div class="q2"> No account?</div>
+                <div class="q3"><u>Signup</u></div>
+          </div>
+        </div>
+        <button class="dark-mode" id="b1">Dark mode</button>
+
+
+
+
+
+        <script src="app.js"></script>   
+    </body>
+</html>
